@@ -1,0 +1,16 @@
+@font-face{
+	font-family: gotham-m;
+	src:url(/dist/fonts/GothamPro-Medium.ttf);
+}
+@font-face{
+	font-family: gotham-r;
+	src:url(/dist/fonts/GothamPro.ttf);
+}
+@font-face{
+	font-family: gotham-b;
+	src:url(/dist/fonts/GothamPro-Bold.ttf);
+}
+@font-face{
+	font-family: gotham-l;
+	src:url(/dist/fonts/GothamPro-Light.ttf);
+}

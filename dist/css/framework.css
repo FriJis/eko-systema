@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+}
+i {
+	color:#2F80ED;
+}
+[v-cloak] {
+	display: none;
+}
+.background{
+	background: #efecec;
+}
+.h.background{
+	background: #333c4c;
+	color:white;
+	width: 100%;
+	padding: 10px 0;
+	font-family: opensans-regular;
+	font-size: 15px;
+	text-align: center;
+}
+.t-a-center{
+	text-align: center;
+}
+.t-a-left{
+	text-align: left;
+}
+.t-a-right{
+	text-align: right;
+}
+.h-auto{
+	margin-right: auto;
+	margin-left: auto;
+}
+.m-top{
+	margin-top: 20px
+}
+.content{
+	width: 100%;
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.border{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.f-size{
+	width: 100%;
+}
+.white{
+	color: white;
+}
+.black{
+	color:black;
+}
+.btn {
+	user-select: none;
+	cursor: pointer;
+}
+.v-center{
+	align-items: center;
+}
+.flex{
+	display: flex;
+}
+.i-flex{
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+}
+.v-a-center {
+	vertical-align: middle;
+}
+.flex.column{
+	flex-direction: column;
+}
+.flex.wrap{
+	flex-wrap: wrap;
+}
+.flex.between{
+	justify-content: space-between;
+}
+.flex.around{
+	justify-content: space-around;
+}
+.j-c-left{
+	justify-content: left;
+}
+.flex > .grow{
+	flex:1 0;
+}

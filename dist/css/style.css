@@ -1,0 +1,57 @@
+body {
+	font-family: gotham-r;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+header {
+	background: white;
+}
+header .inner{
+	padding: 20px 0;
+}
+header .block {
+	font-size: 14px;
+	line-height: 20px;
+}
+header .block#first {
+	max-width: 410px;
+}
+header .block#first .title{
+	font-family: gotham-b;
+	width: 100%;
+	font-size: 30px;
+}
+header .block#first .text{
+	
+}
+
+header .block#second {
+	max-width: 210px;
+	text-align: center;
+}
+header .block#third {
+	text-align: right;
+}
+header .block#third .text{
+	padding: 5px 0;
+}
+header .block#third .text img{
+	padding: 5px;
+	height: 100%;
+}
+header i {
+	font-size: 120%;
+	padding: 0 10px;
+}
+header nav ul li{
+	padding: 20px;
+	font-size: 16px;
+	border-top:2px solid rgba(0,0,0,0);
+	border-bottom:2px solid rgba(0,0,0,0);
+}
+header nav ul li:hover, header nav ul li.active{
+	transition: 0.2s;
+	border-top:2px solid #2F80ED;
+}
