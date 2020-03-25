@@ -4,6 +4,11 @@
 i {
 	color:#2F80ED;
 }
+.img {
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
 [v-cloak] {
 	display: none;
 }
@@ -90,4 +95,14 @@ i {
 }
 .flex > .grow{
 	flex:1 0;
+}
+.h1, h1 {
+	font-family: ma-b;
+	font-size: 40px;
+	line-height: 49px;
+}
+.h4, h4 {
+	font-family: ma-b;
+	font-size: 16px;
+	line-height: 20px;
 }

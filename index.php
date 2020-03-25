@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="<?= $mainFolder ?>/css/noscript.css?ver=<?= $ver ?>">
 	<link rel="stylesheet" href="<?= $mainFolder ?>/fontawesome/css/all.css?ver=<?= $ver ?>">
 
+	<!-- CCS LIB -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 	<link rel="stylesheet" href="<?= $mainFolder ?>/css/style.css?ver=<?= $ver ?>">
 	<link rel="stylesheet" href="<?= $mainFolder ?>/css/media.css?ver=<?= $ver ?>">
@@ -60,9 +62,51 @@
 			</div>
 		</nav>
 	</header>
-	
-	
+	<div class="slider f-size background">
+		<div class="inner content">
+			<ul>
+				<li>
+					<div class="block flex column">
+						<div class="h"></div>
+						<div class="text"></div>
+					</div>
+				</li>
+				<li style="background: black">
+					<div class="block flex column">
+						<div class="h"></div>
+						<div class="text"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="diagnostics f-size">
+		<div class="inner content">
+			<div class="h1">Диагностика и ремонт</div>
+			<p>Проведение диагностики в минимальные сроки с возможностью выезда на объект</p>
+			<div class="catalog flex wrap around">
+				<?for($i = 0; $i < 12; $i++){?>
+				<div class="item">
+					<div class="block img" style="background-image: url(/dist/img/test.jpg)">
+						<div class="card flex column">
+							<div class="btn h-auto">Заказать диагностику</div>
+							<div class="text">Бесплатно при согласии на ремонт</div>
+						</div>
+					</div>
+					<div class="title flex between">
+						<span>test</span><span>от 1000 руб</span>
+					</div>
+				</div>
+				<?}?>
+			</div>
+		</div>
+	</div>
 	<script src="<?= $mainFolder ?>/main.js?ver=<?= $ver ?>"></script>
-
+	<script>
+		new Flickity('.slider ul',{
+			wrapAround: true,
+			autoPlay:true
+		})
+	</script>
 </body>
 </html>

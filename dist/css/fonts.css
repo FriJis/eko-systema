@@ -14,3 +14,19 @@
 	font-family: gotham-l;
 	src:url(/dist/fonts/GothamPro-Light.ttf);
 }
+@font-face{
+	font-family: ma-m;
+	src:url(/dist/fonts/MontserratAlternates/MontserratAlternates-Medium.ttf);
+}
+@font-face{
+	font-family: ma-r;
+	src:url(/dist/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf);
+}
+@font-face{
+	font-family: ma-b;
+	src:url(/dist/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf);
+}
+@font-face{
+	font-family: ma-l;
+	src:url(/dist/fonts/MontserratAlternates/MontserratAlternates-Light.ttf);
+}
