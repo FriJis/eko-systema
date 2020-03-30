@@ -60,10 +60,19 @@ header nav ul li:hover, header nav ul li.active{
 .slider {
 	padding-bottom: 50px;
 }
+.slider .block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px 70px;
+    background: rgba(255, 255, 255, 0.7);
+    max-width: 800px;
+}
 .slider ul li {
 	width: 100%;
 	height: 400px;
-	background: pink;
+	background: grey;
+	position: relative;
 }
 .diagnostics {
 	padding: 40px 0;
@@ -136,15 +145,18 @@ header nav ul li:hover, header nav ul li.active{
 	color: #828282;
 	padding: 10px 0;
 }
-.info {
+.info__page {
 	padding: 40px;
 }
-.info .text {
-	padding: 20px;
+.info__page .block {
+	align-items: flex-start;
+}
+.info__page .text {
+	padding: 0 20px;
 }
 footer {
-	   background: #070E20;
-    min-height: 200px;
+	background: #070E20;
+    height: 150px;
     position: absolute;
     top: 100%;
 }

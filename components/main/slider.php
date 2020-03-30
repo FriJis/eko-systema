@@ -4,8 +4,8 @@
 			<?for($i = 0; $i < 12; $i++){?>
 			<li class="img" style="background-image: url(/dist/img/test.jpg)">
 				<div class="block flex column">
-					<div class="h"></div>
-					<div class="text"></div>
+					<div class="h1">Авторизованный сервис-центр</div>
+					<p>по ремонту и обслуживанию кондиционеров, вентиляции и теплового оборудования</p>
 				</div>
 			</li>
 			<?}?>
