@@ -179,12 +179,36 @@ i {
 	font-family: ma-b;
 	font-size: 40px;
 	line-height: 49px;
-	padding: 20px;
+	padding: 20px 0;
 }
 .h4, h4 {
 	font-family: ma-b;
 	font-size: 16px;
 	line-height: 20px;
+}
+p {
+	font-family: gotham-r;
+	font-size: 16px;
+	line-height: 25px;
+}
+ul.style {
+    padding-left: 40px;
+    line-height: 25px;
+    font-size: 16px;
+    color: grey;
+}
+ul.style li {
+    position: relative;
+}
+ul.style li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #2f90f2;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    border-radius: 20px;
 }
 .noscript {
     position: fixed;
@@ -275,7 +299,7 @@ header nav ul li:hover, header nav ul li.active{
 	padding: 40px 0;
 }
 .catalog {
-	padding-bottom: 20px;
+	padding: 20px;
 }
 .catalog .item {
 	margin-top: 20px;
@@ -322,7 +346,7 @@ header nav ul li:hover, header nav ul li.active{
 	padding: 10px 0;
 }
 .garant {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 .garant .item {
 	width: 200px;
@@ -341,6 +365,12 @@ header nav ul li:hover, header nav ul li.active{
 	font-size: 13px;
 	color: #828282;
 	padding: 10px 0;
+}
+.info {
+	padding: 40px;
+}
+.info .text {
+	padding: 20px;
 }
 footer {
 	   background: #070E20;
