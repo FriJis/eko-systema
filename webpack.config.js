@@ -7,6 +7,11 @@ module.exports = {
       filename: 'app.css',
     })
   ],
+  resolve: {
+    alias: {
+      vue: path.resolve(__dirname, 'node_modules/vue/dist/vue.min.js'),
+    }
+  },
   module: {
     rules: [
       {
