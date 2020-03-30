@@ -1,0 +1,32 @@
+@font-face{
+	font-family: gotham-m;
+	src:url(/src/fonts/GothamPro-Medium.ttf);
+}
+@font-face{
+	font-family: gotham-r;
+	src:url(/src/fonts/GothamPro.ttf);
+}
+@font-face{
+	font-family: gotham-b;
+	src:url(/src/fonts/GothamPro-Bold.ttf);
+}
+@font-face{
+	font-family: gotham-l;
+	src:url(/src/fonts/GothamPro-Light.ttf);
+}
+@font-face{
+	font-family: ma-m;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Medium.ttf);
+}
+@font-face{
+	font-family: ma-r;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf);
+}
+@font-face{
+	font-family: ma-b;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf);
+}
+@font-face{
+	font-family: ma-l;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Light.ttf);
+}

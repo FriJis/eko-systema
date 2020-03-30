@@ -1,13 +1,16 @@
 *{
 	box-sizing: border-box;
 }
+body {
+	position: relative;
+	min-height: 100vh;
+}
 i {
 	color:#2F80ED;
 }
 .img {
-	background-position: center;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background-position: center !important;
+	background-size: cover !important;
 }
 [v-cloak] {
 	display: none;
@@ -42,7 +45,7 @@ i {
 }
 .content{
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1180px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -100,6 +103,7 @@ i {
 	font-family: ma-b;
 	font-size: 40px;
 	line-height: 49px;
+	padding: 20px;
 }
 .h4, h4 {
 	font-family: ma-b;

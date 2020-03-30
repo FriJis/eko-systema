@@ -1,0 +1,353 @@
+@import url(https://unpkg.com/flickity@2/dist/flickity.min.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face{
+	font-family: gotham-m;
+	src:url(/src/fonts/GothamPro-Medium.ttf);
+}
+@font-face{
+	font-family: gotham-r;
+	src:url(/src/fonts/GothamPro.ttf);
+}
+@font-face{
+	font-family: gotham-b;
+	src:url(/src/fonts/GothamPro-Bold.ttf);
+}
+@font-face{
+	font-family: gotham-l;
+	src:url(/src/fonts/GothamPro-Light.ttf);
+}
+@font-face{
+	font-family: ma-m;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Medium.ttf);
+}
+@font-face{
+	font-family: ma-r;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf);
+}
+@font-face{
+	font-family: ma-b;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf);
+}
+@font-face{
+	font-family: ma-l;
+	src:url(/src/fonts/MontserratAlternates/MontserratAlternates-Light.ttf);
+}
+*{
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	min-height: 100vh;
+}
+i {
+	color:#2F80ED;
+}
+.img {
+	background-position: center !important;
+	background-size: cover !important;
+}
+[v-cloak] {
+	display: none;
+}
+.background{
+	background: #efecec;
+}
+.h.background{
+	background: #333c4c;
+	color:white;
+	width: 100%;
+	padding: 10px 0;
+	font-family: opensans-regular;
+	font-size: 15px;
+	text-align: center;
+}
+.t-a-center{
+	text-align: center;
+}
+.t-a-left{
+	text-align: left;
+}
+.t-a-right{
+	text-align: right;
+}
+.h-auto{
+	margin-right: auto;
+	margin-left: auto;
+}
+.m-top{
+	margin-top: 20px
+}
+.content{
+	width: 100%;
+	max-width: 1180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.border{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.f-size{
+	width: 100%;
+}
+.white{
+	color: white;
+}
+.black{
+	color:black;
+}
+.btn {
+	user-select: none;
+	cursor: pointer;
+}
+.v-center{
+	align-items: center;
+}
+.flex{
+	display: flex;
+}
+.i-flex{
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+}
+.v-a-center {
+	vertical-align: middle;
+}
+.flex.column{
+	flex-direction: column;
+}
+.flex.wrap{
+	flex-wrap: wrap;
+}
+.flex.between{
+	justify-content: space-between;
+}
+.flex.around{
+	justify-content: space-around;
+}
+.j-c-left{
+	justify-content: left;
+}
+.flex > .grow{
+	flex:1 0;
+}
+.h1, h1 {
+	font-family: ma-b;
+	font-size: 40px;
+	line-height: 49px;
+	padding: 20px;
+}
+.h4, h4 {
+	font-family: ma-b;
+	font-size: 16px;
+	line-height: 20px;
+}
+.noscript {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.noscript .error {
+    font-family: opensans-regular;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.noscript .error img{
+	max-height: 100px;
+}
+body {
+	font-family: gotham-r;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+header {
+	background: white;
+}
+header .inner{
+	padding: 20px 0;
+}
+header .block {
+	font-size: 14px;
+	line-height: 20px;
+}
+header .block#first {
+	max-width: 410px;
+}
+header .block#first .title{
+	font-family: gotham-b;
+	width: 100%;
+	font-size: 30px;
+}
+header .block#first .text{
+	
+}
+
+header .block#second {
+	max-width: 210px;
+	text-align: center;
+	font-size: 14px;
+}
+header .block#third {
+	text-align: right;
+}
+header .block#third .text{
+	padding: 5px 0;
+}
+header .block#third .text img{
+	padding: 5px;
+	height: 100%;
+}
+header i {
+	font-size: 120%;
+	padding: 0 10px;
+}
+header nav ul li{
+	padding: 20px;
+	font-size: 16px;
+	border-top:2px solid rgba(0,0,0,0);
+	border-bottom:2px solid rgba(0,0,0,0);
+}
+header nav ul li:hover, header nav ul li.active{
+	transition: 0.2s;
+	color:#2F80ED;
+	border-top:2px solid #2F80ED;
+}
+.slider {
+	padding-bottom: 50px;
+}
+.slider ul li {
+	width: 100%;
+	height: 400px;
+	background: pink;
+}
+.diagnostics {
+	padding: 40px 0;
+}
+.catalog {
+	padding-bottom: 20px;
+}
+.catalog .item {
+	margin-top: 20px;
+	width: 360px;
+}
+.catalog .item .block{
+	width: 100%;
+	height: 235px;
+	background: silver;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.catalog .item .block .card{
+	background: rgba(0,0,0,0.5);
+	padding-top: 50px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	transition: 0.3s;
+}
+.catalog .item .block:hover .card{
+	top: 0;
+}
+.catalog .item .block .card .btn{
+
+	background: #2F80ED;
+	font-family: gotham-b;
+	font-size: 14px;
+	width: fit-content;
+	padding: 20px;
+	border-radius: 5px;
+}
+.catalog .item  .block .card .text{
+	padding: 30px 0 0;
+	font-size: 14px;
+	/*font-family: gotham-l;*/
+}
+.catalog .item .title{
+	padding: 10px 0;
+}
+.garant {
+	padding: 40px 0;
+}
+.garant .item {
+	width: 200px;
+	line-height: 20px;
+}
+.garant .item img{
+	width: fit-content;
+	padding: 10px 0;
+}
+.garant .item .h {
+	font-size: 20px;
+	padding: 10px 0;
+}
+.garant .item .text {
+	font-family: gotham-l;
+	font-size: 13px;
+	color: #828282;
+	padding: 10px 0;
+}
+footer {
+	   background: #070E20;
+    min-height: 200px;
+    position: absolute;
+    top: 100%;
+}
+
+
+
