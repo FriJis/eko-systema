@@ -127,6 +127,9 @@ header nav ul li:hover, header nav ul li.active{
 .catalog .item .title{
 	padding: 10px 0;
 }
+.catalog .item .title .t {
+	max-width: 200px;
+}
 .garant {
 	padding: 20px 0;
 }

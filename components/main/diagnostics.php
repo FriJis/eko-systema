@@ -7,14 +7,14 @@
 				foreach($arr as $data){
 			?>
 			<div class="item">
-				<div class="block img" style="background-image: url(/dist/img/diagn/<?=$data?>)">
+				<div class="block img" style="background-image: url(/dist/img/diagn/<?=$data['img']?>)">
 					<div class="card flex column">
 						<div class="btn h-auto" onclick="callBackForm.switchForm()">Заказать диагностику</div>
 						<div class="text">Бесплатно при согласии на ремонт</div>
 					</div>
 				</div>
 				<div class="title flex between">
-					<span>test</span><span>от 1000 руб</span>
+					<span class="t"><?=$data['title']?></span><span>от <?=$data['cena']?> руб</span>
 				</div>
 			</div>
 			<?}?>
