@@ -19,12 +19,12 @@
 		<nav class="f-size background">
 			<div class="content">
 				<ul class="flex t-a-center column-960">
-					<li class="grow btn active">Главная</li>
-					<li class="grow btn">Каталог</li>
-					<li class="grow btn">Комплектующие</li>
-					<li class="grow btn">Диагностика</li>
-					<li class="grow btn">Сертификаты</li>
-					<li class="grow btn">Контакты</li>
+					<a href="/"><li class="grow btn active">Главная</li></a>
+					<a href="?page=catalog"><li class="grow btn">Каталог</li></a>
+					<a href=""><li class="grow btn">Комплектующие</li></a>
+					<a href=""><li class="grow btn">Диагностика</li></a>
+					<a href=""><li class="grow btn">Сертификаты</li></a>
+					<a href=""><li class="grow btn">Контакты</li></a>
 				</ul>
 			</div>
 		</nav>

@@ -1,11 +1,10 @@
 <div class="diagnostics f-size">
 	<div class="inner content">
-		<div class="h1">Диагностика и ремонт</div>
-		<p>Проведение диагностики в минимальные сроки с возможностью выезда на объект</p>
+		<div class="h1"><?=$h1?></div>
+		<p><?=$text?></p>
 		<div class="catalog flex wrap around">
 			<?
-				$datas = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg'];
-				foreach($datas as $data){
+				foreach($arr as $data){
 			?>
 			<div class="item">
 				<div class="block img" style="background-image: url(/dist/img/diagn/<?=$data?>)">

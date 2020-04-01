@@ -312,6 +312,9 @@ header i {
 	font-size: 120%;
 	padding: 0 10px;
 }
+header nav ul a {
+	width: 100%;
+}
 header nav ul li{
 	padding: 20px;
 	font-size: 16px;
@@ -453,6 +456,48 @@ footer {
     height: 150px;
     position: absolute;
     top: 100%;
+}
+footer .inner {
+	height: 100%;
+}
+footer .block {
+	font-size: 14px;
+	line-height: 20px;
+}
+footer .block#first {
+	max-width: 410px;
+}
+footer .block#first .title{
+	font-family: gotham-b;
+	width: 100%;
+	font-size: 30px;
+	padding: 10px;
+}
+footer .block#first .text{
+	
+}
+
+footer .block#second {
+	max-width: 310px;
+	font-size: 14px;
+}
+footer .block#second a {
+	padding: 10px;
+	width: 50%;
+}
+footer .block#third {
+	text-align: right;
+}
+footer .block#third .text{
+	padding: 5px 0;
+}
+footer .block#third .text img{
+	padding: 5px;
+	height: 100%;
+}
+footer i {
+	font-size: 120%;
+	padding: 0 10px;
 }
 
 

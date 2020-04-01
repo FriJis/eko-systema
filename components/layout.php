@@ -24,10 +24,9 @@
 		</div>
 	</noscript>
 	<?template('header')?>
-	<?template('main')?>
+	<?page()?>
 	<?template('form')?>
-	<footer class="f-size">
-		<div class="content"></div>
-	</footer>
+	<?template('footer')?>
+	
 </body>
 </html>
