@@ -188,6 +188,43 @@ header nav ul li:hover, header nav ul li.active{
 	transform: translate(-50%,-50%);
 	background: white;
 }
+
+.howToWork .block {
+	position: relative;
+	width: 380px;
+	margin: 40px 0;
+}
+.howToWork .block .text {
+    --length-work-clip: 20px;
+    background: #e9f2ff;
+    padding: 60px 20px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    clip-path: polygon(0 0, calc(100% - var(--length-work-clip)) 0, 100% 50%, calc(100% - var(--length-work-clip)) 100%, 0 100%, var(--length-work-clip) 50%);
+}
+.howToWork .block:first-child .text{
+	clip-path: polygon(0 0, calc(100% - var(--length-work-clip)) 0, 100% 50%, calc(100% - var(--length-work-clip)) 100%, 0 100%, 0 50%);
+}
+.howToWork .block:last-child .text{
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, var(--length-work-clip) 50%);
+}
+.howToWork .number {
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 50%;
+    background: #1f70de;
+    font-size: 40px;
+    z-index: 1;
+    color: white;
+    border-radius: 50px;
+}
+
 footer {
 	background: #070E20;
     height: 150px;
