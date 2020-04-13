@@ -11,5 +11,7 @@
 			['img' => '6.jpg', 'title' => 'Тепловые завесы', 'cena' => '800']
 		]
 	])?>
+
+	<?template('components/callback')?>
 	<?template('catalog/howToWork')?>
 </div>
