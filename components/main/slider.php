@@ -1,6 +1,6 @@
-<div class="slider f-size background">
+<div class="slider__comp f-size background">
 	<div class="inner content">
-		<ul>
+		<ul slider>
 			<?for($i = 0; $i < 12; $i++){?>
 			<li class="img" style="background-image: url(/dist/img/slider/1.jpg)">
 				<div class="block flex column">
