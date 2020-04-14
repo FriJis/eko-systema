@@ -12,13 +12,3 @@
 		</ul>
 	</div>
 </div>
-
-<script>
-	try {
-		new Flickity('.slider ul',{
-			wrapAround: true,
-			autoPlay:true
-		})	
-	} catch{}
-	
-</script>

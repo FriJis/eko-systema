@@ -8,11 +8,3 @@
 		</ul>
 	</div>
 </div>
-
-<script>
-	var slider = document.querySelector('.spare ul');
-	new Flickity(slider,{
-			wrapAround: true,
-			autoPlay:true
-		});
-</script>

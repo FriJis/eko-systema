@@ -84,6 +84,31 @@ i {
 	cursor: pointer;
 }
 
+.btn.styles {
+	font-family: gotham-b;
+	font-size: 14px;
+	width: fit-content;
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+}
+
+.btn.blue {
+	background: #1f70de;
+}
+
+.btn.blue:hover {
+	background: #529cff;
+}
+
+.btn.blue:active, .btn.blue.active {
+	background: #2870d1;
+}
+
+.btn.disabled {
+	background: #828282;
+}
+
 .v-center {
 	align-items: center;
 }

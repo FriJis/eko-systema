@@ -11,3 +11,21 @@ global.Vue = Vue
 global.Flickity = Flickity
 global.axios = axios
 
+
+//modules
+import './js/form'
+import './js/slider'
+//modules
+
+
+//callback form switcher
+try {
+    setImmediate(() => {
+        document.querySelectorAll('[callback-form]').forEach(item => {
+            item.addEventListener('click', event => {
+                window.callBackForm.switchForm()
+            })
+        })
+    })
+} catch { }
+

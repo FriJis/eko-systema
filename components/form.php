@@ -5,23 +5,3 @@
 		</div>
 	</div>
 </div>
-
-<script>
-	window.callBackForm = new Vue({
-		el:'#form',
-		data()
-		{
-			return {
-				active: 0
-			}
-		},
-		methods:
-		{
-			switchForm()
-			{
-				console.log('ok')
-				this.active = !this.active
-			}
-		}
-	})
-</script>

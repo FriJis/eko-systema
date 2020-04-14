@@ -10,7 +10,6 @@
 
 	<!-- WEBPACK -->
 	<link rel="stylesheet" href="<?= $mainFolder ?>/app.css?ver=<?= $ver ?>">
-	<script src="<?= $mainFolder ?>/main.js?ver=<?= $ver ?>"></script>
 
 	<title>Document</title>
 </head>
@@ -27,6 +26,6 @@
 	<?page()?>
 	<?template('form')?>
 	<?template('footer')?>
-	
+	<script src="<?= $mainFolder ?>/main.js?ver=<?= $ver ?>"></script>
 </body>
 </html>
