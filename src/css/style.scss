@@ -1,0 +1,436 @@
+:root {
+	--dist-path: "/dist/";
+}
+
+body {
+	font-family: gotham-r;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+header {
+	background: white;
+	.inner {
+		padding: 20px 0;
+	}
+
+	.block {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.block#first {
+		max-width: 410px;
+	}
+
+	.block#first .title {
+		font-family: gotham-b;
+		width: 100%;
+		font-size: 30px;
+	}
+
+	.block#first .text {
+	}
+
+	.block#second {
+		max-width: 210px;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.block#third {
+		text-align: right;
+	}
+
+	.block#third .text {
+		padding: 5px 0;
+	}
+
+	.block#third .text img {
+		padding: 5px;
+		height: 100%;
+	}
+
+	i {
+		font-size: 120%;
+		padding: 0 10px;
+	}
+
+	nav ul a {
+		width: 100%;
+	}
+
+	nav ul li {
+		padding: 20px;
+		font-size: 16px;
+		border-top: 2px solid rgba(0, 0, 0, 0);
+		border-bottom: 2px solid rgba(0, 0, 0, 0);
+	}
+
+	nav ul li:hover,
+	nav ul li.active {
+		transition: 0.2s;
+		color: #2f80ed;
+		border-top: 2px solid #2f80ed;
+	}
+}
+
+.slider__comp {
+	padding-bottom: 50px;
+
+	.block {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 30px 70px;
+		background: rgba(255, 255, 255, 0.7);
+		max-width: 800px;
+	}
+
+	ul li {
+		width: 100%;
+		height: 400px;
+		background: grey;
+		position: relative;
+	}
+}
+
+.diagnostics {
+	padding: 40px 0;
+}
+
+.catalog {
+	.item {
+		margin-top: 20px;
+		width: 360px;
+		.block {
+			width: 100%;
+			height: 235px;
+			background: silver;
+			text-align: center;
+			color: white;
+			border-radius: 5px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.block .card {
+			background: rgba(0, 0, 0, 0.5);
+			padding-top: 50px;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			transition: 0.3s;
+		}
+
+		.block:hover .card {
+			top: 0;
+		}
+
+		.block .card .text {
+			padding: 30px 0 0;
+			font-size: 14px;
+		}
+
+		.title {
+			padding: 10px 0;
+		}
+
+		.title .t {
+			max-width: 200px;
+		}
+	}
+}
+
+.garant {
+	padding: 20px 0;
+
+	.item {
+		width: 200px;
+		line-height: 20px;
+
+		img {
+			width: fit-content;
+			padding: 10px 0;
+		}
+
+		.h {
+			font-size: 20px;
+			padding: 10px 0;
+		}
+
+		.text {
+			font-family: gotham-l;
+			font-size: 13px;
+			color: #828282;
+			padding: 10px 0;
+		}
+	}
+}
+
+.info__page {
+	padding: 40px;
+	.block {
+		align-items: flex-start;
+	}
+
+	.text {
+		padding: 0 20px;
+	}
+}
+
+.form__page {
+	.callback {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+		opacity: 0;
+		transform: scale(1.3);
+		transition: 0.4s;
+		z-index: 999;
+	}
+
+	.callback.active {
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+
+	.callback .block {
+		width: 100%;
+		max-width: 800px;
+		height: 100%;
+		max-height: 500px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: white;
+	}
+}
+
+.howToWork {
+	.block {
+		position: relative;
+		max-width: 380px;
+		width: 100%;
+		margin: 40px 0;
+	}
+	.block .text {
+		--length-work-clip: 20px;
+		background: #e9f2ff;
+		padding: 60px 20px 20px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+		clip-path: polygon(
+			0 0,
+			calc(100% - var(--length-work-clip)) 0,
+			100% 50%,
+			calc(100% - var(--length-work-clip)) 100%,
+			0 100%,
+			var(--length-work-clip) 50%
+		);
+	}
+
+	.block:first-child .text {
+		clip-path: polygon(
+			0 0,
+			calc(100% - var(--length-work-clip)) 0,
+			100% 50%,
+			calc(100% - var(--length-work-clip)) 100%,
+			0 100%,
+			0 50%
+		);
+	}
+
+	.block:last-child .text {
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, var(--length-work-clip) 50%);
+	}
+
+	.number {
+		width: 70px;
+		line-height: 70px;
+		text-align: center;
+		align-items: center;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 0;
+		left: 50%;
+		background: #1f70de;
+		font-size: 40px;
+		z-index: 1;
+		color: white;
+		border-radius: 50px;
+	}
+}
+
+.callback {
+	background-image: url("/dist/img/callback.jpg");
+	.block {
+		width: 100%;
+		max-width: 650px;
+		padding: 40px 20px;
+	}
+
+	.text {
+		margin: 20px 0;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.btn {
+	}
+}
+
+.breadcrumbs {
+	padding: 30px 10px;
+	a,
+	span {
+		color: grey;
+	}
+	span {
+		padding: 0 10px;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+
+.product {
+	--width: 300px;
+	.garant .item {
+		background: white;
+		padding: 20px;
+		margin: 20px 0;
+	}
+	.left {
+		width: calc(100% - var(--width));
+		padding-right: 30px;
+	}
+	.right {
+		width: var(--width);
+	}
+	.card {
+		padding: 0px 10px 20px;
+		img {
+			width: 30%;
+		}
+		.info {
+			width: 70%;
+			padding: 0 20px;
+			position: relative;
+			padding-bottom: 70px;
+
+			.description {
+				margin: 10px 0;
+				color: grey;
+				line-height: 20px;
+				font-size: 15px;
+			}
+
+			.block {
+				position: absolute;
+				bottom: 0px;
+				.price {
+					padding: 10px;
+					span {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+	table {
+		font-size: 12px;
+		line-height: 20px;
+		tr td:nth-child(2),
+		tr td:nth-child(3) {
+			width: 180px;
+		}
+		tr td:first-child {
+			color: #1f70de;
+		}
+		tr td {
+			padding: 10px;
+		}
+		tr:nth-child(2n) {
+			background: #e9f2ff;
+		}
+		tr:first-child td {
+			color: grey;
+		}
+		td.allow {
+			color: #6fcf97;
+		}
+		td.deny {
+			color: #f2994a;
+		}
+	}
+}
+
+footer {
+	background: #070e20;
+	position: absolute;
+	top: 100%;
+
+	.inner {
+		height: 100%;
+	}
+
+	.block {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.block#first {
+		max-width: 410px;
+	}
+
+	.block#first .title {
+		font-family: gotham-b;
+		width: 100%;
+		font-size: 30px;
+		padding: 10px;
+	}
+
+	.block#first .text {
+	}
+
+	.block#second {
+		max-width: 310px;
+		font-size: 14px;
+	}
+
+	.block#second a {
+		padding: 10px;
+		width: 50%;
+	}
+
+	.block#third {
+		text-align: right;
+	}
+
+	.block#third .text {
+		padding: 5px 0;
+	}
+
+	.block#third .text img {
+		padding: 5px;
+		height: 100%;
+	}
+
+	i {
+		font-size: 120%;
+		padding: 0 10px;
+	}
+}

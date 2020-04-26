@@ -12,7 +12,7 @@
 			['img' => '6.jpg', 'title' => 'Тепловые завесы', 'cena' => '800']
 		]
 	])?>
-	<?template('main/garant')?>
+	<?template('main/garant',['h1' => true])?>
 	<?template('main/spare')?>	
 	<?template('main/info')?>	
 </div>

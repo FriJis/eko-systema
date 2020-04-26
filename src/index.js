@@ -2,7 +2,7 @@ import jquery from 'jquery'
 import Vue from 'vue'
 import Flickity from 'flickity'
 import axios from 'axios'
-import './css/app.css'
+import './css/app.scss'
 
 
 global.$ = jquery

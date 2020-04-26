@@ -16,12 +16,17 @@ i {
 	background-size: cover !important;
 }
 
+img {
+	object-fit: cover;
+	border-radius: 5px;
+}
+
 [v-cloak] {
 	display: none;
 }
 
 .background {
-	background: #efecec;
+	background: #f5f5f5;
 }
 
 .h.background {
@@ -164,15 +169,20 @@ i {
 	font-family: ma-b;
 	font-size: 35px;
 	line-height: 45px;
-	margin: 20px 0;
+	margin: 10px 0;
 }
 
+.h3, h3 {
+	margin: 10px 0;
+	font-family: ma-b;
+	font-size: 25px;
+	line-height: 30px;
+}
 .h4, h4 {
 	font-family: ma-b;
 	font-size: 16px;
 	line-height: 20px;
 }
-
 p {
 	font-family: gotham-r;
 	font-size: 16px;
@@ -214,7 +224,7 @@ ul.style li:before {
 	}
 }
 
-@media(max-width: 720) {
+@media(max-width: 720px) {
 	.column-720 {
 		flex-direction: column !important;
 	}

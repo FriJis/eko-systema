@@ -1,6 +1,8 @@
 <div class="garant f-size">
 	<div class="content">
+		<?if($h1){?>
 		<div class="h1">Гарантия качества выполненной работы</div>
+		<?}?>
 		<div class="items flex wrap around">
 			<div class="item flex column">
 				<img src="<?= $mainFolder ?>/img/podhod.svg">

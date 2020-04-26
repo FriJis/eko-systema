@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="<?= $mainFolder ?>/fontawesome/css/all.css?ver=<?= $ver ?>">
 
 	<!-- WEBPACK -->
-	<link rel="stylesheet" href="<?= $mainFolder ?>/app.css?ver=<?= $ver ?>">
+	<link rel="stylesheet" href="<?= $mainFolder ?>/main.css?ver=<?= $ver ?>">
 
 	<title>Document</title>
 </head>
