@@ -11,6 +11,9 @@ function page()
 	} elseif ($page == 'product') {
 		return template('product');
 	}
+	elseif ($page == 'product2') {
+		return template('product2');
+	}
 	return template('main');
 }
 

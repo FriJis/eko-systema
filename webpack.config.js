@@ -6,6 +6,7 @@ module.exports = {
     main: './src/index.js',
     style: './src/css/app.scss',
     form: './src/css/form.scss',
+    product2: './src/css/product2.scss',
   },
   plugins: [new MiniCssExtractPlugin({
     filename: '[name].css',
