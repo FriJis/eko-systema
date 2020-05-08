@@ -5,7 +5,14 @@ window.callBackForm = new Vue({
     data()
     {
         return {
-            active: 0
+            active: 0,
+            fields: {
+                uname: '',
+                uphone: '',
+                utext: ''
+            },
+            done: 0
+            
         }
     },
     methods:
@@ -13,6 +20,16 @@ window.callBackForm = new Vue({
         switchForm()
         {
             this.active = !this.active
+        },
+        send() {
+            axios
+                .post('/mail.php', this.fields)
+                .then(response => {
+                    this.done = 1
+                    setTimeout(() => {
+                        this.done = 0
+                    }, 1500)
+                })
         }
     }
 })

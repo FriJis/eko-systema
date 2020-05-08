@@ -1,5 +1,5 @@
 <?
-$ver = 1;
+$ver = 2;
 $mainFolder = "/dist";
 require 'components/layout.php';
 

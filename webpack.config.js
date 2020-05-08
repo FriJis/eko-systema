@@ -2,6 +2,11 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  entry: {
+    main: './src/index.js',
+    style: './src/css/app.scss',
+    form: './src/css/form.scss',
+  },
   plugins: [new MiniCssExtractPlugin({
     filename: '[name].css',
   })],

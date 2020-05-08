@@ -2,7 +2,8 @@ import jquery from 'jquery'
 import Vue from 'vue'
 import Flickity from 'flickity'
 import axios from 'axios'
-import './css/app.scss'
+// import './css/app.scss'
+// import './css/form.scss'
 
 
 global.$ = jquery
@@ -23,6 +24,7 @@ try {
     setImmediate(() => {
         document.querySelectorAll('[callback-form]').forEach(item => {
             item.addEventListener('click', event => {
+                event.preventDefault()
                 window.callBackForm.switchForm()
             })
         })
